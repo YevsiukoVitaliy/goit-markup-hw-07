@@ -1,0 +1,25 @@
+.iteam-advantage:not(:last-child){
+	margin-right: 30px;
+}
+.advantage {
+	display: flex;
+}
+.title-advantage {
+	@include font($fw:700, $lh:1.14);
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--main-color);
+}
+.title-advantage{
+	margin-bottom: 10px;
+}
+.container-advantage{
+	justify-content: center;
+	width: 270px;
+	height: 120px;
+	margin-bottom: 30px;
+	background-color: #F5F4FA;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+}
