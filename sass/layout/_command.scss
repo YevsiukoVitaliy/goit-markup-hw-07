@@ -1,12 +1,12 @@
-.command-item:not(:last-child){
+.command__item:not(:last-child){
 	margin-right: 30px;
 }
-.command-item{
+.command__item{
 	background: #FFFFFF;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
-.title-command {
+.command__title {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
@@ -15,7 +15,7 @@
 	color: var(--main-color);
 	margin-bottom: 10px;
 }
-.container-command{
+.command__container{
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -23,13 +23,13 @@
 	display: flex;
 	list-style: none;
 }
-.text-command {
+.command__text {
 	font-size: 16px;
 	line-height: 1.19;
 	text-align: center;
 	letter-spacing: 0.03em;
 }
-.title-section {
+.section__title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
@@ -38,7 +38,7 @@
 	color: var(--main-color);
 	margin-bottom: 50px;
 }
-.network-command{
+.network__command{
 	display: flex;
 	justify-content: center;
 	margin-top: 16px;
@@ -48,7 +48,7 @@
 	justify-content: center;
 	margin-top: 16px;
 }
-.network-link{
+.network__command-link{
 	width: 44px;
 	height: 44px;
 	align-items: center;
@@ -67,14 +67,10 @@
 	transform: translateY(0);
 }
 }
-.icon-network{
+.network__command-icon{
 	fill: #AFB1B8;
 }
-.network-item+.network-item{
+.network__command-item+.network__command-item{
 	margin-left: 10px;
 }
 
-.list-network{
-	display: flex;
-	justify-content: center;
-}

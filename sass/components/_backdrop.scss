@@ -24,7 +24,7 @@
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 	padding: 40px;
-	&-btn{
+	&__btn{
 		width: 30px;
 		height: 30px;
 		border: 1px solid rgba(0, 0, 0, 0.1);
@@ -46,23 +46,26 @@
 	opacity: 0;
 	pointer-events: none;
 }
-.icon-modal{
+.modal__icon{
 	vertical-align: middle;
-}.backdrop-text{
-	@include font(700, 20px, 1.15);
+}
+.backdrop__text{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.15;
 	color: var(--title-text-color);
 	font-family: Roboto;
 	text-align: center;
 	letter-spacing: 0.03em;
 	margin-bottom: 12px;
 }
-.form-field{
+.form__field{
 	margin-bottom: 10px;
 }
 .input-wrap{
 	position: relative;
 }
-.input-icon{
+.input__icon{
 	position: absolute;
 	left: 15px;
 	top: 50%;
@@ -70,14 +73,21 @@
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	fill: #212121;
 }
-.form-label{
-	@include font($lh:12px, $lh:1.17);
+.form__input:focus,.comments__input:focus{
+	border-color: #2196F3;
+}
+.form__label{
+	font-size: 12px;
+	line-height: 1.17;
 	margin-bottom: 4px;
 	display: block;
 	letter-spacing: 0.01em;
 	color: var(--main-text-color);
 }
-.form-input{
+.form__input:focus+.input__icon{
+	fill: #2196F3;
+}
+.form__input{
 	width: 100%;
 	height: 40px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
@@ -88,7 +98,7 @@
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.comments-input{
+.comments__input{
 	width: 100%;
 	height: 120px;
 	display: block;
@@ -107,11 +117,13 @@
 }
 
 
-.form-field-comments{
+.form__field-comments{
 	margin-bottom: 20px;
 }
-.form-button{
-	@include font(700, 16px, 1.88);
+.form__button{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
 	width: 200px;
 	height: 50px;
 	font-style: normal;
@@ -124,23 +136,18 @@
 	margin: 0 auto;
 	border: none;
 }
-.icon-send{
-	vertical-align: middle;
-	margin-left: 10px;
-	fill: var(--footer-text-color);
-}
-.link-policy{
+.link__policy{
 	color: #2196F3;
 	text-decoration:underline;
 }
-.check-text{
+.check__text{
 	letter-spacing: 0.03em;
 	color: var(--main-text-color);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.check-item{
+.check__item{
 	width: 16px;
 	height: 15px;
 	border-radius: 2px;
@@ -151,14 +158,14 @@
 	justify-content: center;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
-.modal-field{
+.modal__field{
 	margin-bottom: 30px;
 }
-.icon-check{
+.check__icon{
 	fill: #ffffff;
 }
-.modal-check:checked + .check-text {
-	.check-item{
+.modal__check:checked + .check__text {
+	.check__item{
 		background-color:#2196F3 ;
 		border: none;
 	}

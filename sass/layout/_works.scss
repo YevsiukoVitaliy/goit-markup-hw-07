@@ -1,9 +1,9 @@
 .works {
 	display: flex;
-	&-item:not(:last-child){
+	&__item:not(:last-child){
 		margin-right: 30px;
 	}
-	&-title {
+	&__title {
 		font-weight: 700;
 		font-size: 36px;
 		line-height: 1.16;
@@ -12,10 +12,10 @@
 		color: var(--main-color);
 		margin-bottom: 50px;
 	}
-	&-container{
+	&__container{
 		position: relative;
 	}
-	&-text{
+	&__text{
 		position: absolute;
 		left: 0;
 		bottom: 0;

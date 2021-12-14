@@ -5,8 +5,3 @@
 	--footer-text-color: #ffffff;
 	--title-color: #2196f3;
 }
-@mixin font( $fw:400, $fs:14px, $lh:1.71) {
-	font-weight: $fw;
-	font-size: $fs;
-	line-height: $lh;
-}
