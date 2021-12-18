@@ -10,16 +10,17 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	&__title {
-		font-weight: 900;
-		font-size: 44px;
-		line-height: 1.36;
-		letter-spacing: 0.06em;
-		text-transform: uppercase;
-		color: var(--footer-text-color);
-		margin-bottom: 30px;
-	}
-	.order__btn {
+}
+.order__title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--footer-text-color);
+	margin-bottom: 30px;
+}
+.order__btn {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
@@ -31,5 +32,4 @@
 	cursor: pointer;
 	border: none;
 	padding: 10px 32px;
-}
 }

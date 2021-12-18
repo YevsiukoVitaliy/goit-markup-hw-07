@@ -1,13 +1,10 @@
 .section{
 	padding-top: 94px;
 	padding-bottom: 94px;
-	&__advantage{
-		padding-bottom: 0;
-	}
-	&-color{
-		background-color:#F5F4FA;
-	}
-	&-gray {
-		background-color: #f5f4fa;
-	}
+}
+.section--notpaddingbottom{
+	padding-bottom: 0;
+}
+.section--graybackground{
+	background-color:#F5F4FA;
 }

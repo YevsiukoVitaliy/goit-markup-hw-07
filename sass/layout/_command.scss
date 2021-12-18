@@ -1,10 +1,10 @@
-.command__item:not(:last-child){
-	margin-right: 30px;
-}
 .command__item{
 	background: #FFFFFF;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
+	&:not(:last-child){
+		margin-right: 30px;
+	}
 }
 .command__title {
 	font-weight: 500;
@@ -38,17 +38,12 @@
 	color: var(--main-color);
 	margin-bottom: 50px;
 }
-.network__command{
+.social{
 	display: flex;
 	justify-content: center;
 	margin-top: 16px;
 }
-.network{
-	display: flex;
-	justify-content: center;
-	margin-top: 16px;
-}
-.network__command-link{
+.social-link{
 	width: 44px;
 	height: 44px;
 	align-items: center;
@@ -57,8 +52,8 @@
 	display: flex;
 	justify-content: center;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	&:hover .icon-network,
-	&:focus .icon-network{
+	&:hover .social-icon,
+	&:focus .social-icon{
 	fill:#FFFFFF;
 }
 	&:hover,
@@ -67,10 +62,10 @@
 	transform: translateY(0);
 }
 }
-.network__command-icon{
+.social-icon{
 	fill: #AFB1B8;
 }
-.network__command-item+.network__command-item{
+.social-item+.social-item{
 	margin-left: 10px;
 }
 
